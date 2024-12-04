@@ -1,0 +1,72 @@
+Text,Label
+"complicated 3D character models are widely used in fields of entertainment, virtual reality, medicine etc",background_claim
+The range of breathtaking realistic 3D models is only limited by the creativity of artists and resolution of devices,background_claim
+a production cannot afford major revisions,background_claim
+providing a flexible and efficient solution to animation remains an open problem,own_claim
+Skeleton Subspace Deformation (SSD) is the predominant approach to character skinning at present,background_claim
+Driving 3D models in a natural and believable manner is not trivial,background_claim
+its ease of implementation,data
+low cost of computing,data
+"SSD is widely used in games, virtual reality and other realtime applications",background_claim
+artists will edit the geometry of characters in the rest pose to fine-tune animations,background_claim
+This approach is not commonly applied,background_claim
+editing in the rest pose will influence most other poses,background_claim
+SSD is also notorious for artifacts at rotating elbows and extreme poses,background_claim
+Example based skinning methods such as Pose Space Deformation (PSD) are candidates for correcting SSD limitations,background_claim
+PSD may be used as a compensation to the underlying SSD,background_claim
+the animator specifies the PSD examples after the SSD has been performed,background_claim
+"the examples are best interpolated in the rest pose, before the SSD has been applied",background_claim
+the action of the SSD and any other deformations must be “inverted” in order to push the example compensation before these operations,background_claim
+SSD is the most representative in the family of basic skinning,background_claim
+this inverse strategy has a better performance than the same framework without it,own_claim
+this approach will improve the quality of deformation,own_claim
+they are seldom applied to interactive applications,background_claim
+the high cost of computing,data
+complicated algorithms,data
+this category can generate more believable animation effects compared to its geometric counterpart,background_claim
+Pose Space Deformation,background_claim
+combines shape blending and Skeleton Subspace Deformation by formulating a scattered data interpolation problem over sculpted (or otherwise obtained) example poses,background_claim
+[ 1 ],data
+Related research efforts have improved the speed and power of example-based skinning,background_claim
+incorporate linear elements into RBF to produce constant changes between examples,background_claim
+[ 2 ],data
+precompute principal components of the deformation influences for individual kinematic joints instead of storing displacements for key poses,background_claim
+enabling realtime rendering large nonlinear finite element models of human hands,background_claim
+[ 3 ],data
+introduce weighted pose space deformation for deforming realistic models of human hand,background_claim
+[ 4 ],data
+these example-based approaches can be considered as non-parametric skin deformation methods,background_claim
+identifies statistically relevant bones and approximates bone transforms from example mesh animations,background_claim
+[ 5 ],data
+these have also seen some development in recent years,background_claim
+[ 6 ],data
+[ 7 ],data
+are also common practices in the entertainment production,background_claim
+Skinning using free form lattices,background_claim
+NURBS curves,background_claim
+[ 10 ],data
+[ 8 ],data
+[ 9 ],data
+the inverse operation can improve the results,own_claim
+inverse operation is required,own_claim
+SSD is widely applied to interactive applications such as games and virtual reality,background_claim
+it is implemented in most commercial animation packages,background_claim
+its simplicity,data
+efficiency,data
+SSD is very popular in circumstances that require animating a number of characters in real time,background_claim
+vertex transformations can be easily implemented in the graphic card,data
+the domain of adjusting one vertex in this way is strictly limited to the linear subspace formed by the vertex as transformed by joints influencing this vertex,background_claim
+"When a character goes wrong in some pose, animators can adjust joint influence weights",background_claim
+SSD cannot synthesize many parts of a character skin involving complicated joint structures,background_claim
+deforming is limited to a linear subspace,background_claim
+[ 1 ],data
+a combination of SSD and shape blending providing nice solution to above mentioned problems,background_claim
+[ 1 ],data
+PSD and improved example-based schemes have been discussed in many publications,background_claim
+[ 2 ],data
+[ 3 ],data
+[ 4 ],data
+the reason why the inverse should be performed is still ambiguous,own_claim
+inverting the SSD (and other deformations) in order to interpolate the examples in the rest pose is a the right choice,own_claim
+it is an improvement,own_claim
+the superiority of the inverse method,own_claim
